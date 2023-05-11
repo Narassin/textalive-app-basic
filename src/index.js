@@ -104,7 +104,7 @@ function onAppReady(app) {
   // 楽曲URLが指定されていなければ マジカルミライ 2020テーマ曲を読み込む
   // Load a song when a song URL is not specified
   if (!app.songUrl) {
-    player.createFromSongUrl("http://www.youtube.com/watch?v=ygY2qObZv24");
+    player.createFromSongUrl("https://www.youtube.com/watch?v=IsxdBZ0wgq8");
   }
 }
 
@@ -170,8 +170,8 @@ function onPlay() {
 // 再生が一時停止・停止したら歌詞表示をリセット
 // Reset lyrics text field when music playback is paused or stopped
 function onPause() {
-  document.querySelector("#text").textContent = "-";
+  document.querySelector("#text").textContent = "*Paused*";
 }
 function onStop() {
-  document.querySelector("#text").textContent = "-";
+  document.querySelector("#text").textContent = "*Song Ended UwU*";
 }
